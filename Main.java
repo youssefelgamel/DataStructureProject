@@ -10,7 +10,7 @@ public class Main {
 
         boolean on = true;
         while (on) {
-            System.out.println("Hello and Welcome!");
+            System.out.println("Hello and Get the hell out of here!");
             System.out.println("1.Add student\n2.Add course\n3.DisplayAllStudents\n4.Quit");
     
             int choice = input.nextInt();
