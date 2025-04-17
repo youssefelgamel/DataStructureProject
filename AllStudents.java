@@ -1,10 +1,8 @@
 public class AllStudents {
-    
-    Student studentObject;
-    Students_Single_LL AllStudentsLinkedList = new Students_Single_LL();
 
-    public AllStudents(){}
-
+    public AllStudents(){
+        Students_Single_LL AllStudentsLinkedList = new Students_Single_LL();
+    }
             // ========================================================= //
 
     public class Node{   // This is a Single Linked list related only to students.

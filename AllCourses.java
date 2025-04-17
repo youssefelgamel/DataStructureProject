@@ -1,10 +1,8 @@
 public class AllCourses {
-    
-    Course courseObject;
-    Courses_Single_LL AllCoursesLinkedList = new Courses_Single_LL();
 
-    public AllCourses(){}
-
+    public AllCourses(){
+        Courses_Single_LL AllCoursesLinkedList = new Courses_Single_LL();
+    }
             // ========================================================= //
 
     class Node{   // This is a Single Linked list related only to courses.
