@@ -1,8 +1,12 @@
 public class AllStudents {
+    
+    Student studentObject;
+    Students_Single_LL AllStudentsLinkedList;
 
     public AllStudents(){
-        Students_Single_LL AllStudentsLinkedList = new Students_Single_LL();
+    this.AllStudentsLinkedList = new Students_Single_LL();
     }
+
             // ========================================================= //
 
     public class Node{   // This is a Single Linked list related only to students.
@@ -32,10 +36,15 @@ public class AllStudents {
 
         public void Display(){
             Node temp = head;
+            System.out.println("All students' ID:");
             while (temp != null) {
-                System.out.println(temp.student);
+                System.out.print("[");
+                System.out.print(temp.student.getID());
+                System.out.print("]");
+                System.out.print(" -> ");
                 temp = temp.next;
             }
+            System.out.println();
         }
     }
         // ========================================================== //

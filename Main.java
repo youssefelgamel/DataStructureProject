@@ -5,13 +5,15 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        Functions f;
+        Functions f = new Functions();
         int id;
-        // Nour's Comment test2 منور
+
         boolean on = true;
         while (on) {
-            System.out.println("Hello and Get the hell out of here!");
-            System.out.println("1.Add student\n2.Add course\n3.DisplayAllStudents\n4.Quit");
+            System.out.println("=================");
+            System.out.println("Hello and Welcome!");
+            System.out.println("=================");
+            System.out.println("1.Add student\n2.Add course\n3.DisplayAllStudents\n4.DisplayAllCourses\n5.Quit");
     
             int choice = input.nextInt();
 
@@ -20,7 +22,6 @@ public class Main {
                 
                 System.out.println("Pls Enter Student's ID:");
                 id = input.nextInt();
-                f = new Functions();
                 f.addStudent(id);
 
                     break;
@@ -28,16 +29,18 @@ public class Main {
 
                 System.out.println("Pls Enter course's ID:");
                 id = input.nextInt();
-                f = new Functions();
                 f.addCourse(id);
                     break;
 
                 case 3:
-                f =  new Functions();
                 f.DisplayStudents();
                 break;
 
                 case 4:
+                f.DisplayAllCourses();
+                break;
+
+                case 5:
                     on = false;
             
 

@@ -1,8 +1,12 @@
 public class AllCourses {
+    
+    Course courseObject;
+    Courses_Single_LL AllCoursesLinkedList;
 
     public AllCourses(){
-        Courses_Single_LL AllCoursesLinkedList = new Courses_Single_LL();
+    this.AllCoursesLinkedList = new Courses_Single_LL();
     }
+
             // ========================================================= //
 
     class Node{   // This is a Single Linked list related only to courses.
@@ -29,7 +33,19 @@ public class AllCourses {
                 temp.next = n;
             }
         }
+        public void Display(){
+            Node temp = head;
+            System.out.println("All courses' ID:");
+            while (temp != null) {
+                System.out.print("[");
+                System.out.print(temp.course.getID());
+                System.out.print("]");
+                System.out.print(" -> ");
+                temp = temp.next;
+            }
+        System.out.println();
+        }
     }
-        // ========================================================== //
 
 }
+        // ========================================================== //

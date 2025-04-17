@@ -19,4 +19,8 @@ public class Functions {
     public void DisplayStudents(){
         AS.AllStudentsLinkedList.Display();
     }
+    
+    public void DisplayAllCourses(){
+        AC.AllCoursesLinkedList.Display();
+    }
 }
